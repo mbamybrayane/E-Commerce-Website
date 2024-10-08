@@ -25,29 +25,6 @@
     </div>
     <nav class="nav">
       <div class="container nav_container">
-        <a href="#" class="nav_logo">EXCLUSIVE</a>
-        <ul class="nav_list">
-          <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">About</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
-          <li class="nav_item">
-            <a href="./sign-up.html" class="nav_link">Sign up</a>
-          </li>
-        </ul>
-        <div class="nav_items">
-          <form action="#" class="nav_form">
-            <input
-              type="text"
-              class="nav_input"
-              placeholder="search here...."
-            />
-            <img src="./image/search.png" alt="" class="nav_search" />
-          </form>
-          <img src="./image/heart.png" alt="" class="nav_heart" />
-          <a href="./cart.html">
-            <img src="./image/cart.png" alt="" class="nav_cart" />
-          </a>
-        </div>
         <span class="hamburger">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +41,48 @@
             />
           </svg>
         </span>
+        <a href="#" class="nav_logo">EXCLUSIVE</a>
+        <form action="#" class="nav_form desktop_search">
+          <input type="text" class="nav_input" placeholder="search here...." />
+          <img src="./image/search.png" alt="" class="nav_search" />
+        </form>
+        <div class="nav_icons">
+          <!--   <img src="./image/heart.png" alt="" class="nav_heart" /> -->
+          <a href="./cart.html">
+            <img src="./image/cart.png" alt="" class="nav_cart" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Barre de recherche pour mobile -->
+      <div class="category_bar">
+        <div class="container">
+          <ul class="category_list">
+            <li><a href="#" class="category_link">Football</a></li>
+            <li><a href="#" class="category_link">Basketball</a></li>
+            <li><a href="#" class="category_link">Tennis</a></li>
+            <li><a href="#" class="category_link">Running</a></li>
+            <li><a href="#" class="category_link">Yoga</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <nav class="mobile_nav mobile_nav_hide">
+    <form action="#" class="nav_form mobile_search">
+      <input type="text" class="nav_input" placeholder="search here...." />
+      <img src="./image/search.png" alt="" class="nav_search" />
+    </form>
+    
+    <!-- Menu des catégories pour mobile, caché au départ -->
+    <div class="mobile_nav mobile_nav_hide">
+      <ul>
+        <li><a href="#" class="category_link">Football</a></li>
+        <li><a href="#" class="category_link">Basketball</a></li>
+        <li><a href="#" class="category_link">Tennis</a></li>
+        <li><a href="#" class="category_link">Running</a></li>
+        <li><a href="#" class="category_link">Yoga</a></li>
+      </ul>
+    </div>
+    <!-- <nav class="mobile_nav mobile_nav_hide">
       <ul class="mobile_nav_list">
         <li class="mobile_nav_item">
           <a href="/" class="mobile_nav_link">Home</a>
@@ -84,10 +100,11 @@
           <a href="#" class="mobile_nav_link">Cart</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
+
     <header class="header">
       <div class="container header_container">
-        <div class="header_filter">
+        <!-- <div class="header_filter">
           <a href="#" class="header_filter_link">Woman’s Fashion</a>
           <a href="#" class="header_filter_link">Men’s Fashion</a>
           <a href="#" class="header_filter_link">Electronics</a>
@@ -97,7 +114,7 @@
           <a href="#" class="header_filter_link">Baby’s & Toys</a>
           <a href="#" class="header_filter_link">Groceries & Pets</a>
           <a href="#" class="header_filter_link">Health & Beauty</a>
-        </div>
+        </div> -->
         <img src="./image/header.png" alt="" class="header_img" />
       </div>
     </header>
