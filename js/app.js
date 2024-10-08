@@ -26,7 +26,7 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-var swiper = new Swiper(".mySwiper", {
+/* var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 10,
   pagination: {
@@ -47,7 +47,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
     },
   },
-});
+}); */
 
 // Animations
 ScrollReveal().reveal(".top_nav", {
