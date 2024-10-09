@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de produit</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-container">
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                    <li>
+                        <div class="breadcrumb-item">
+                            <a href="#">Men</a>
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" class="breadcrumb-separator">
+                                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="breadcrumb-item">
+                            <a href="#">Clothing</a>
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" class="breadcrumb-separator">
+                                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="breadcrumb-item-current">
+                        <a href="#" aria-current="page">Basic Tee 6-Pack</a>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Image gallery -->
+            <div class="image-gallery">
+                <div class="image-main">
+                    <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-secondary-product-shot.jpg" alt="Two each of gray, white, and black shirts laying flat." class="gallery-image">
+                </div>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg" alt="Model wearing plain black basic tee." class="gallery-image">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg" alt="Model wearing plain gray basic tee." class="gallery-image">
+                    </div>
+                </div>
+                <div class="image-featured">
+                    <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." class="gallery-image">
+                </div>
+            </div>
+
+            <!-- Product info -->
+            <div class="product-info">
+                <div class="product-header">
+                    <h1 class="product-title">Basic Tee 6-Pack</h1>
+                </div>
+
+                <!-- Options -->
+                <div class="product-options">
+                    <h2 class="sr-only">Product information</h2>
+                    <p class="product-price">$192</p>
+
+                    <!-- Reviews -->
+                    <div class="product-reviews">
+                        <h3 class="sr-only">Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="star-rating">
+                                <!-- Stars -->
+                                <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                                </svg>
+                                <!-- Repeat the star SVG 4 more times -->
+                            </div>
+                            <p class="sr-only">4 out of 5 stars</p>
+                            <a href="#" class="reviews-link">117 reviews</a>
+                        </div>
+                    </div>
+
+                    <form class="product-form">
+                        <!-- Colors -->
+                        <div class="color-options">
+                            <h3>Color</h3>
+                            <fieldset aria-label="Choose a color">
+                                <div class="color-choice">
+                                    <!-- Color options -->
+                                    <label aria-label="White" class="color-label">
+                                        <input type="radio" name="color-choice" value="White" class="sr-only">
+                                        <span class="color-swatch white"></span>
+                                    </label>
+                                    <!-- Repeat for Gray and Black colors -->
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- Sizes -->
+                        <div class="size-options">
+                            <div class="size-header">
+                                <h3>Size</h3>
+                                <a href="#" class="size-guide-link">Size guide</a>
+                            </div>
+
+                            <fieldset aria-label="Choose a size">
+                                <div class="size-grid">
+                                    <!-- Size options -->
+                                    <label class="size-label disabled">
+                                        <input type="radio" name="size-choice" value="XXS" disabled class="sr-only">
+                                        <span>XXS</span>
+                                    </label>
+                                    <!-- Repeat for other sizes -->
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <button type="submit" class="add-to-bag">Add to bag</button>
+                    </form>
+                </div>
+
+                <div class="product-details">
+                    <!-- Description and details -->
+                    <div class="product-description">
+                        <h3 class="sr-only">Description</h3>
+                        <div class="description-text">
+                            <p>The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-highlights">
+                        <h3>Highlights</h3>
+                        <ul class="highlights-list">
+                            <li>Hand cut and sewn locally</li>
+                            <li>Dyed with our proprietary colors</li>
+                            <li>Pre-washed &amp; pre-shrunk</li>
+                            <li>Ultra-soft 100% cotton</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-details-extra">
+                        <h2>Details</h2>
+                        <div class="details-text">
+                            <p>The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
