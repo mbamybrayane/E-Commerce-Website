@@ -165,7 +165,7 @@ ul {
 .header_container {
   width: 100%;
   display: flex;
-  margin-top: 10rem;
+/*   margin-top: 10rem; */
 }
 .header_filter {
   width: 25%;
@@ -175,6 +175,9 @@ ul {
 }
 .header_filter_link {
   color: var(--colo-dark-1);
+}
+.header_img{
+  width: 100%;
 }
 
 /* section */
@@ -540,10 +543,12 @@ ul {
 
   .mobile_search {
     display: flex; 
-    margin: 2rem auto ;
+    /* margin: 2rem auto; */
+    margin-top: 20px;
     width: 85%;
     z-index: 0;
     position: absolute;
+    top: 100px;
     left: 50%; /* Positionne le côté gauche à 50% de la largeur du parent */
     transform: translateX(-50%); /* Déplace l'élément vers la gauche de 50% de sa propre largeur */
   }
@@ -555,7 +560,7 @@ ul {
     font-size: 10px;
   }
   .nav{
-    height: 7rem;
+    height: 14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
