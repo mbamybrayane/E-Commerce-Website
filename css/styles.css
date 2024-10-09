@@ -95,8 +95,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
-  color: var(--colo-white-2);
+  gap: 6px;
 }
 .nav_form {
   width: 50%;
@@ -509,8 +508,8 @@ ul {
   cursor: pointer;
 }
 .hamburger > svg {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
 }
 
 /* Barre de recherche pour desktop */
@@ -750,4 +749,5 @@ ul {
   display: block;
   width: 24px;
   height: 24px;
+  color: #333;
 }
