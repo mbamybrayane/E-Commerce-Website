@@ -91,6 +91,13 @@ ul {
  display: flex;
  align-items: center;
 }
+.nav_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: var(--colo-white-2);
+}
 .nav_form {
   width: 50%;
   display: flex;
@@ -738,4 +745,9 @@ ul {
 }
 .form_group > span {
   margin-top: 2rem;
+}
+.lucide {
+  display: block;
+  width: 24px;
+  height: 24px;
 }

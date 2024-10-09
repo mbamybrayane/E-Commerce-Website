@@ -1,3 +1,13 @@
+ import {createIcons, Menu, Volume2, X} from 'lucide';
+
+  createIcons({
+    icons: {
+    Menu,
+    Volume2,
+    X
+  }
+    });
+
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
@@ -106,3 +116,5 @@ AddToCart.forEach((button) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
+
+

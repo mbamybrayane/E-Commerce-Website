@@ -51,6 +51,7 @@
           <a href="./cart.html">
             <img src="./image/cart.png" alt="" class="nav_cart" />
           </a>
+          <i data-lucide="user"></i>
         </div>
       </div>
 
@@ -361,7 +362,6 @@
                     >
                       Ajouter au panier
                     </button>
-
                   </div>
                 </div>
               </div>
@@ -369,7 +369,11 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card_top">
-                  <img src="./image/item/items-10.jpg" alt="" class="card_img" />
+                  <img
+                    src="./image/item/items-10.jpg"
+                    alt=""
+                    class="card_img"
+                  />
                   <div class="card_tag">-40%</div>
                   <div class="card_top_icons">
                     <svg
@@ -1130,7 +1134,11 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card_top">
-                  <img src="./image/item/items-1.jpg " alt="" class="card_img" />
+                  <img
+                    src="./image/item/items-1.jpg "
+                    alt=""
+                    class="card_img"
+                  />
                   <div class="card_top_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1245,7 +1253,11 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card_top">
-                  <img src="./image/item/items-21.jpg" alt="" class="card_img" />
+                  <img
+                    src="./image/item/items-21.jpg"
+                    alt=""
+                    class="card_img"
+                  />
                   <div class="card_top_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -2843,7 +2855,10 @@
         <div class="service">
           <img src="./image/icons/service-3.png" alt="" class="service_img" />
           <h3 class="service_title">MONEY BACK GUARANTY</h3>
-          <p class="service_p">Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="service_p">
+            Lorem ipsum dolor sit amet consectetur.
+            <i data-lucide="menu" class="lucide"></i>
+          </p>
         </div>
       </div>
     </section>
@@ -2890,6 +2905,13 @@
           <p class="footer_copy">
             Copyright Exclusive 2023. All right reserved
           </p>
+          <!-- Icones Lucide -->
+          <i data-lucide="menu" class="lucide"></i>
+          <!-- Icône du menu -->
+          <i data-lucide="volume-2"></i>
+          <!-- Icône volume -->
+          <i data-lucide="x"></i>
+          <!-- Icône de fermeture -->
         </div>
       </div>
     </footer>
@@ -2897,5 +2919,13 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+     <script>
+    lucide.createIcons(); // Initialisation des icônes
+  </script>
   </body>
 </html>
