@@ -316,7 +316,7 @@ ul {
   cursor: pointer;
 }
 .category:hover {
-  background-color: var(--colo-primary);
+  background-color: #eb9788;    /* f08774 */
 }
 .category_icon {
   width: 3.5rem;
