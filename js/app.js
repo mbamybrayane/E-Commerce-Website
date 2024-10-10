@@ -101,6 +101,7 @@ hamburger.addEventListener("click", () => {
   Nav.classList.toggle("mobile_nav_hide");
 });
 
+
 const AddToCart = document.querySelectorAll(".add_to_cart");
 
 AddToCart.forEach((button) => {
