@@ -26,6 +26,7 @@ body {
 .sr-only{
     text-align: center;
     color: var(--colo-primary);
+    font-size: 3rem;
 }
 .image-item{
     /* background-color: #dfe0e2; */
@@ -59,16 +60,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    margin-top: 4rem;
 }
 
 .product-title {
-    font-size: 1.875rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .product-price {
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #111827;
     margin-bottom: 1rem;
@@ -206,13 +208,14 @@ body {
 }
 
 .description-text p{
-    font-size: 1rem;
+    font-size: 2rem;
     color: #4b5563;
 }
 
 .quantity-selector {
       display: flex;
       align-items: center;
+      margin: 15px 0;
     }
 
     .quantity-controls {
@@ -223,9 +226,23 @@ body {
     }
 
     .quantity-controls button {
-      width: 30px;
-      height: 30px;
-      font-size: 16px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      text-align: center;
+      color: #8e9091;
+      cursor: pointer;
+      border: 1px solid #d1d5db;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
+    .quantity-controls button:hover {
+      background-color: #f1acac59;
     }
 
     .quantity-controls span {
