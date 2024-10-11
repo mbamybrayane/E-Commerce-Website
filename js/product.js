@@ -7,6 +7,7 @@ const products = [
     rating: 4.5,
     ratingCount: 88,
     discount: "-40%",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, labore.", 
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const products = [
     rating: 4.0,
     ratingCount: 50,
     discount: "-30%",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, labore.",
   },
   {
     id: 3,
@@ -65,7 +67,7 @@ const products = [
   {
     id: 8,
     title: "Autre produit",
-      image: "./image/items/item-1.png",
+    image: "./image/items/item-1.png",
     price: 80,
     rating: 4.0,
     ratingCount: 50,
@@ -79,7 +81,7 @@ const productContainer = document.getElementById("product-container");
 const productsHTML = products.map(product => `
     <div class="swiper-slide">
         <div class="card">
-            <a href="./product_details.html">
+            <a href="./product_details.html?id=${product.id}">
                 <div class="card_top">
                     <img src="${product.image}" alt="${product.title}" class="card_img" />
                     <div class="card_tag">${product.discount}</div>

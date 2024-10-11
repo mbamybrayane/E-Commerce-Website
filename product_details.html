@@ -1,119 +1,273 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page de produit</title>
-    <link rel="stylesheet" href="css/product.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body>
     <div class="product-page">
-        <div class="product-container">
-            
-            <h2 class="sr-only">Product information</h2>
+      <div class="product-container">
+        <h2 class="sr-only">Product information</h2>
 
-            <!-- Product info -->
-            <div class="product-info">
-                
-                <div class="image-grid">
-                    <div class="image-item">
-                        <img src="./image/item/items-8.jpg" alt="Model wearing plain black basic tee." class="gallery-image">
-                    </div>
+        <!-- Product info -->
+        <div class="product-info">
+          <div class="image-grid">
+            <div class="image-item">
+              <img
+                src=""
+                alt="Model wearing plain black basic tee."
+                class="gallery-image"
+                id="product-image"
+              />
+              <!-- ./image/item/items-8.jpg" -->
             </div>
-                <!-- Options -->
-                <div class="product-options">
-                    <div class="product-header">
-                        <h1 class="product-title">Basic Tee 6-Pack</h1>
-                    </div>
-                    <p class="product-price">$192</p>
-
-                    <!-- Reviews -->
-                    <div class="product-reviews">
-                        <h3 class="sr-only">Reviews</h3>
-                        <div class="reviews-summary">
-                            <div class="star-rating">
-                                <!-- Stars -->
-                                <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-                                </svg>
-                                <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-                                </svg>
-                                <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-                                </svg>
-                                <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-                                </svg>
-                                <div style="position: relative; width: 20px; height: 20px;">
-                                    <svg class="star" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="position: absolute; top: 0; left: 0;">
-                                    <path fill="none" stroke="currentColor" stroke-width="2" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" />
-                                    </svg>
-                                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="position: absolute; top: 0; left: 0; clip: rect(0, 10px, 20px, 0);">
-                                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-                                    </svg>
-                                    </div>
-                              
-
-
-                                <!-- Repeat the star SVG 4 more times -->
-                            </div>
-                            <p class="sr-only">4 out of 5 stars</p>
-                            <a href="#" class="reviews-link">117 reviews</a>
-                        </div>
-                </div>
-                    <div class="product-details">
-                        <!-- Description and details -->
-                        <div class="product-description">
-                            <h3 class="sr-only">Description</h3>
-                            <div class="description-text">
-                                <p>The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.</p>
-                            </div>
-                        </div>
-    
-                    </div>
-
-                    <form class="product-form">
-                        <!-- Colors -->
-                        <div class="color-options">
-                            <h3>Color</h3>
-                            <fieldset aria-label="Choose a color">
-                                <div class="color-choice">
-                                    <!-- Color options -->
-                                    <label aria-label="White" class="color-label">
-                                        <input type="radio" name="color-choice" value="White" class="sr-only">
-                                        <span class="color-swatch white"></span>
-                                    </label>
-                                    <!-- Repeat for Gray and Black colors -->
-                                </div>
-                            </fieldset>
-                        </div>
-
-                        <!-- Sizes -->
-                        <div class="size-options">
-                            <div class="size-header">
-                                <h3>Size</h3>
-                                <a href="#" class="size-guide-link">Size guide</a>
-                            </div>
-
-                            <fieldset aria-label="Choose a size">
-                                <div class="size-grid">
-                                    <!-- Size options -->
-                                    <label class="size-label disabled">
-                                        <input type="radio" name="size-choice" value="XXS" disabled class="sr-only">
-                                        <span>XXS</span>
-                                    </label>
-                                    <!-- Repeat for other sizes -->
-                                </div>
-                            </fieldset>
-                        </div>
-
-                        <button type="submit" class="add-to-bag">Add to bag</button>
-                    </form>
-                    
-                </div>
-
+          </div>
+          <!-- Options -->
+          <div class="product-options">
+            <div class="product-header">
+              <h1 class="product-title" id="product-title">
+                <!-- Basic Tee 6-Pack -->
+              </h1>
             </div>
+            <p class="product-price" id="product-price"><!-- $192 --></p>
+
+            <!-- Reviews -->
+            <div class="product-reviews">
+              <h3 class="sr-only">Reviews</h3>
+              <div class="reviews-summary">
+                <div class="star-rating">
+                  <!-- Stars -->
+                  <svg
+                    class="star"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="star"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="star"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="star"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div style="position: relative; width: 20px; height: 20px">
+                    <svg
+                      class="star"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      aria-hidden="true"
+                      style="position: absolute; top: 0; left: 0"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                      />
+                    </svg>
+                    <svg
+                      class="star"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        clip: rect(0, 10px, 20px, 0);
+                      "
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- Repeat the star SVG 4 more times -->
+                </div>
+                <p class="sr-only">4 out of 5 stars</p>
+                <a href="#" class="reviews-link">117 reviews</a>
+              </div>
+            </div>
+            <div class="product-details">
+              <!-- Description and details -->
+              <div class="product-description">
+                <h3 class="sr-only">Description</h3>
+                <div class="description-text">
+                  <p id="product-description"></p>
+                  <!-- The Basic Tee 6-Pack allows you to fully express your
+                vibrant personality with three grayscale options. Feeling
+                adventurous? Put on a heather gray tee. Want to be a
+                trendsetter? Try our exclusive colorway: "Black". Need to
+                add an extra pop of color to your outfit? Our white tee has
+                you covered. -->
+                </div>
+              </div>
+            </div>
+
+            <form class="product-form">
+              <!-- Colors -->
+              <div class="color-options">
+                <h3>Color</h3>
+                <fieldset aria-label="Choose a color">
+                  <div class="color-choice">
+                    <!-- Color options -->
+                    <label aria-label="White" class="color-label">
+                      <input
+                        type="radio"
+                        name="color-choice"
+                        value="White"
+                        class="sr-only"
+                      />
+                      <span class="color-swatch white"></span>
+                    </label>
+                    <!-- Repeat for Gray and Black colors -->
+                  </div>
+                </fieldset>
+              </div>
+
+              <!-- Sizes -->
+              <div class="size-options">
+                <div class="size-header">
+                  <h3>Size</h3>
+                  <a href="#" class="size-guide-link">Size guide</a>
+                </div>
+
+                <fieldset aria-label="Choose a size">
+                  <div class="size-grid">
+                    <!-- Size options -->
+                    <label class="size-label disabled">
+                      <input
+                        type="radio"
+                        name="size-choice"
+                        value="XXS"
+                        disabled
+                        class="sr-only"
+                      />
+                      <span>XXS</span>
+                    </label>
+                    <!-- Repeat for other sizes -->
+                  </div>
+                </fieldset>
+              </div>
+
+              <!-- Div pour la gestion de la quantité -->
+              <div class="quantity-selector">
+                <p>Quantité:</p>
+                <div class="quantity-controls">
+                  <button id="decrementBtn">-</button>
+                  <span id="quantityValue">1</span>
+                  <button id="incrementBtn">+</button>
+                </div>
+              </div>
+
+              <button type="submit" class="add-to-bag">Add to bag</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="./js/product.js"></script>
+    <script>
+      // Fonction pour obtenir les paramètres de l'URL
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Récupération de l'ID du produit à partir de l'URL
+      const productId = getQueryParam("id");
+
+      // Trouver le produit correspondant dans le tableau 'products'
+      const product = products.find((p) => p.id == productId);
+
+      // Si le produit est trouvé, afficher ses détails
+      if (product) {
+        document.getElementById("product-image").src = product.image;
+        document.getElementById("product-title").textContent = product.title;
+        document.getElementById(
+          "product-price"
+        ).textContent = `$${product.price}`;
+        document.getElementById("product-description").textContent =
+          product.description;
+      } else {
+        // Si le produit n'est pas trouvé, afficher un message d'erreur
+        document.getElementById("product-details").innerHTML =
+          "<p>Produit non trouvé</p>";
+      }
+    </script>
+
+    <script>
+         // Sélection des éléments HTML
+    const decrementBtn = document.getElementById('decrementBtn');
+    const incrementBtn = document.getElementById('incrementBtn');
+    const quantityValue = document.getElementById('quantityValue');
+
+    // Initialisation de la quantité
+    let quantity = 1;
+
+    // Fonction pour mettre à jour l'affichage de la quantité
+    function updateQuantityDisplay() {
+      quantityValue.innerHTML = quantity;
+    }
+
+    // Gestionnaire de clic pour le bouton de décrémentation
+    decrementBtn.addEventListener('click', function() {
+        event.preventDefault();
+      if (quantity > 1) {
+        quantity--;
+        updateQuantityDisplay();
+      }
+      return quantity;
+    });
+
+    // Gestionnaire de clic pour le bouton d'incrémentation
+    incrementBtn.addEventListener('click', function() {
+        event.preventDefault();
+      quantity++;
+      updateQuantityDisplay();
+      return quantity;
+    });
+    </script>
+  </body>
 </html>
