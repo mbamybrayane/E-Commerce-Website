@@ -88,23 +88,24 @@
           <img src="./image/auth-image.png" alt="" class="auth_image" />
         </div>
         <div class="auth_content">
-          <form action="" class="auth_form">
+          <form action="" class="auth_form" id="registerForm">
             <h2 class="form_title">Create your account</h2>
             <p class="auth_p">Enter your details below</p>
             <div class="form_group">
-              <input type="text" placeholder="Name" class="form_input" />
+              <input type="text" placeholder="Name" class="form_input" id="username" />
             </div>
             <div class="form_group">
-              <input type="email" placeholder="Email" class="form_input" />
+              <input type="email" placeholder="Email" class="form_input" id="email" />
             </div>
             <div class="form_group form_pass">
               <input
                 type="password"
                 placeholder="Password"
-                class="form_input" />
+                class="form_input" id="password" />
             </div>
+            <div id="message"></div>
             <div class="form_group">
-              <button class="form_btn">
+              <button class="form_btn" type="submit">
                 <a href="#" class="form_link">Create Account</a>
               </button>
             </div>
@@ -167,6 +168,37 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module">
+        // Sélectionne le formulaire par son ID
+        const registerForm = document.getElementById('registerForm');
+
+        // Ajoute un écouteur d'événement pour capturer la soumission du formulaire
+        registerForm.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            // Récupère les valeurs des champs du formulaire
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Envoie la requête AJAX avec fetch
+            const response = await fetch('php/register.php', {
+                method: 'POST', // Méthode d'envoi de la requête
+                headers: {
+                    'Content-Type': 'application/json' // Spécifie que nous envoyons du JSON
+                },
+                body: JSON.stringify({ // Convertit les données en format JSON
+                    username: username,
+                    email: email,
+                    password: password
+                })
+            });
+
+            // Récupère et affiche la réponse du serveur
+            const result = await response.text(); // Récupère la réponse sous forme de texte
+            document.getElementById('message').innerHTML = result; // Affiche la réponse dans la div
+        });
+    </script>
   </body>
 </html>
